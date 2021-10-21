@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,5 +18,10 @@ public class QuickBeforeAfterTest {
     @Test
     public void test2(){
         System.out.println("Test 2");
+    }
+
+    @After
+    public void teardown(){
+        System.out.println("After");
     }
 }
