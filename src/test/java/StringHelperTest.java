@@ -6,6 +6,7 @@ public class StringHelperTest {
 
     //assertE(message, expected, actual)
     //AACD => CD
+
     StringHelper helper = new StringHelper();
 
     @Test
