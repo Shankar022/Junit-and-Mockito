@@ -1,10 +1,13 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
 public class QuickBeforeAfterTest {
+
+    @BeforeClass
+    public static void beforeClass(){
+        System.out.println("Before class");
+    }
     @Before
     public void setUp(){
         System.out.println("Before");
@@ -23,5 +26,10 @@ public class QuickBeforeAfterTest {
     @After
     public void teardown(){
         System.out.println("After");
+    }
+
+    @AfterClass
+    public static void afterClass(){
+        System.out.println("After class");
     }
 }
