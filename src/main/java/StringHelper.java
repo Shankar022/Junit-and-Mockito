@@ -1,5 +1,6 @@
 public class StringHelper {
 
+	// AACB => CD, ACD =>  CD
 	public String truncateAInFirst2Positions(String str) {
 		if (str.length() <= 2)
 			return str.replaceAll("A", "");
@@ -11,6 +12,7 @@ public class StringHelper {
 				+ stringMinusFirst2Chars;
 	}
 
+	// ABCD => false, ABAB => true, AB => true, A => false
 	public boolean areFirstAndLastTwoCharactersTheSame(String str) {
 
 		if (str.length() <= 1)
